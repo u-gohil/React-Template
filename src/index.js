@@ -1,5 +1,4 @@
-const heading = document.createElement('h1');
-heading.textContent('Ooh webpack!');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const app = document.querySelector('#root');
-app.append(heading);
+ReactDOM.render(<div>testing</div>, document.getElementById('app'));
