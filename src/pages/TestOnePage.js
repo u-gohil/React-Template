@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
+import './TestOnePage.css'
 
 const TestOnePage = () => {
-  return <div>test</div>;
-};
+  return <h1>test</h1>
+}
 
-export default TestOnePage;
+export default TestOnePage
