@@ -1,4 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './app';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-ReactDOM.render(<div>testing</div>, document.getElementById('app'));
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('app')
+);
