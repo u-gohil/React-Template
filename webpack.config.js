@@ -10,7 +10,7 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
-      // Image
+      // Images
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
@@ -32,7 +32,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js',
+    filename: 'app.js',
   },
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
