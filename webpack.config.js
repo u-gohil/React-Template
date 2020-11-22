@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.js'),
@@ -37,4 +37,9 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
   },
-};
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
+  },
+}
