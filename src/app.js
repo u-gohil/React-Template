@@ -1,12 +1,12 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import PageOne from './pages/TestOnePage'
+import Page from './pages/Page'
 
 const App = () => {
   return (
     <main>
       <Switch>
-        <Route path="/" exact component={PageOne} />
+        <Route path="/" exact component={Page} />
       </Switch>
     </main>
   )
