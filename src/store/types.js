@@ -1,0 +1,1 @@
+export const EXAMPLE_INFO = 'EXAMPLE_INFO'
