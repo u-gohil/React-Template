@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Store, { Context } from './store/Store'
 import ReactDOM from 'react-dom'
 import App from './app'
 import { BrowserRouter } from 'react-router-dom'
-import { Provider } from 'react-redux'
-import configureStore from './store/'
+
+//TO DO: FIX CONSTANT UPDATE STATE
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={configureStore()}>
+    <Store>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Provider>
+    </Store>
   </React.StrictMode>,
   document.getElementById('app')
 )

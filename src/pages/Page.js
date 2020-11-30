@@ -1,17 +1,16 @@
-import React, { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { exampleData } from '../store/actions/example.actions'
+import React, { useContext, useEffect } from 'react'
+import { Context } from '../store/Store'
 import './Page.css'
 
 const Page = () => {
-  const dispatch = useDispatch()
-
-  const example = useSelector((state) => state.data)
+  const [state, dispatch] = useContext(Context)
+  const currentUsername = 'TESTNAME'
 
   useEffect(() => {
-    dispatch(exampleData())
-  }, [dispatch])
+    dispatch({ type: 'UPDATE_NAME', currentUsername })
+  })
 
+  console.log(currentUsername)
   return <h1>test</h1>
 }
 
