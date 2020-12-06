@@ -8,9 +8,9 @@ An over-engineered ReactJS template.
 
 - Routing and folder structure have also been set up within the repo
 
-- Redux is used for state managment
+- Hooks/Context is used for state management
 
-- Styling is has been implemented via Tailwind
+- Styling has been implemented via Tailwind
 
 - This project also includes React testing-library set up
 
