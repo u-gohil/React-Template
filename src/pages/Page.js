@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { useQuery, gql } from '@apollo/client'
-import { useStore } from '../store'
+import { useCounter } from '../storeApi'
 import './Page.css'
 
 const EXCHANGE_RATES = gql`
@@ -38,7 +38,7 @@ const Page = () => {
     return <div>{error}</div>
   }
 
-  const {state, dispatch} = useStore();
+  const {count, message, increment, decrement, reset} = useCounter();
   
   return data.rates.map(({ currency, rate }) => (
     <>
@@ -48,11 +48,13 @@ const Page = () => {
         test
       </p>
     </div>
-    {state.count}
-      <button onClick={() => dispatch({type: "increment", message:"Incremented"})}>+</button>
-      <button onClick={() => dispatch({type: "decrement", message: "Decremented"})}>-</button>
-      <button onClick={() => dispatch({type: "reset", message: "Reset"})}>Reset</button>
-      {state.message}
+    <div>
+      {count}
+      <button onClick={() => increment()}>+</button>
+      <button onClick={() => decrement()}>-</button>
+      <button onClick={() => reset()}> Reset</button>
+      {message}
+    </div>
     </>
   ))
 }
