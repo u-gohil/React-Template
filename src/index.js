@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Store, { Context } from './store/Store'
+import { StoreProvider } from "./store";
 import ReactDOM from 'react-dom'
 import App from './app'
 import { BrowserRouter } from 'react-router-dom'
@@ -8,11 +8,11 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Store>
+    <StoreProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </Store>
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('app')
 )
