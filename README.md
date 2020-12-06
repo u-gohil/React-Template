@@ -1,6 +1,6 @@
 # 📇React Template
 
-This template has been set up to be cloned and used to set up projects that require ReactJS.
+An over-engineered ReactJS template. 
 
 ### 👩‍💻Technical Details
 
@@ -15,6 +15,8 @@ This template has been set up to be cloned and used to set up projects that requ
 - This project also includes React testing-library set up
 
 - Lighthouse ci intergration added into the project. Run `lhci autorun` to view reports.
+
+- GraphQL has been added to experiment with querying data  
 
 ### 🔧How to Run the App
 
