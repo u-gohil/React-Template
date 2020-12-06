@@ -14,6 +14,8 @@ This template has been set up to be cloned and used to set up projects that requ
 
 - This project also includes React testing-library set up
 
+- Lighthouse ci intergration added into the project. Run `lhci autorun` to view reports.
+
 ### 🔧How to Run the App
 
 - `yarn`
