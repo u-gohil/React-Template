@@ -1,4 +1,4 @@
-# 📇React Template
+# React Template
 
 An over-engineered but work in progress React template.
 
