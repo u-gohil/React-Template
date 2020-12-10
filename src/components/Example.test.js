@@ -1,10 +1,10 @@
 import React from 'react'
 import { screen, render, cleanup } from '@testing-library/react'
-import Page from './Page'
+import Example from './Example'
 
 describe('App component', () => {
   beforeAll(() => {
-    render(<Page />)
+    render(<Example />)
   })
 
   it('should have the right message in the dom', () => {

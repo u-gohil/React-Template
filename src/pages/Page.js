@@ -5,6 +5,7 @@ import GraphQLExample from '../components/TestGraphQL'
 const Page = () => {
   return (
     <>
+      <p>test</p>
       <Counter />
       <GraphQLExample />
     </>
