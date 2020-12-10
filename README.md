@@ -28,6 +28,4 @@ An over-engineered but work in progress React template.
 
 - Write test cases for `Page.js`
 
-- Refactor GraphQL to use hooks
-
 - Fix Lighthouse CI
