@@ -26,6 +26,8 @@ An over-engineered but work in progress React template.
 
 ### 💭Additional Features to be Implemented
 
+- Write test cases for `Page.js`
+
 - Refactor GraphQL to use hooks
 
 - Fix Lighthouse CI
